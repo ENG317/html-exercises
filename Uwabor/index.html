@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <style>
-
       header {
         text-align: center;
         padding-top: 20px;
@@ -26,10 +25,6 @@
         gap: 50px;
         list-style: none;
       }
-      .navbar li {
-        margin: 0;
-        padding: 0;
-      }
       .navbar {
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
@@ -37,38 +32,26 @@
         text-decoration: none; 
         padding: 10px 20px;
       }
-      .navbar :hover {
-        color: #999999;
-      }
       body {
         background-color: #ebeadf;
       }
-      
       .moving-banner {
         position: absolute;
         left: 0;
         top: 50px;
-        width: 150px;
         animation: moveAcross 10s linear infinite;
         z-index: 10;
       }
-
       @keyframes moveAcross {
          0% {
-          left: 0%;
-        }
+          left: 0%;}
         100% {
-          left: 100%;
-        }
+          left: 100%;}
       }
-
       .navbar a{
         text-decoration: none;
         color: #333333;
         z-index: 1;
-      }
-      .navbar a:visited {
-        color: #333333;
       }
       p {
         text-align: right;
@@ -79,21 +62,6 @@
         margin: 0;
         flex-grow: 1;
       }
-      .left-img {
-        width: 290px;
-        height: auto;
-        flex-shrink: 0; 
-      }
-      .row-container {
-        display: grid;
-        grid-template-columns: 290px minmax(300px, 1fr) 360px;
-        gap: 30px;
-    
-        max-width: none;
-       width: 90%;
-       margin: 100px auto 0;
-      }
-
       .sidebar {
         background-color: #eee68b;
         width: fit-content;
@@ -102,47 +70,40 @@
         border-radius: 8px;
         border: 1px solid #333333;
         z-index: 11;
-
         justify-self: end;
       }
-      
 
     </style>
 
   <header>
     <h1 class="site-title">Welcome to my Portfolio</h1>
-    <nav class="navbar">
+    <ul class="navbar">
+      <ul class="nav-links"></ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="videography.html">Videography</a></li>
       <li><a href="paintings.html">Paintings</a></li>
       <li><a href="contactme.html">Contact Me</a></li>
-     </nav>
-
-  </header>
+     </ul>
 
   <header class="animated-header">
-    <img src="media/animated birds.png" class="moving-banner"
+    <img src="media/" class="moving-banner" width="150" height="150">
   </header>
-
-  <body>
     
-    <main class="row-container">
-        <img src="media/headshot yellow.png" class="left-img">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus adipisci deserunt ad, dignissimos ipsum magnam laudantium alias fugit eos, odio, sit maiores officia. Aliquam quia fuga distinctio eveniet eius ratione quas in vero nesciunt tempora voluptatibus omnis beatae sunt, recusandae enim nobis pariatur nemo eum quisquam nam deleniti minima sed.
-        </p>
-    </main>
-      
-    <aside class="sidebar">
-        <h3>Quick Links</h3>
-        <ul>
-            <li><a href="placeholder">Placeholder Link</a></li>
-            <li><a href="placeholder">Placeholder Link</a></li>
-            <li><a href="placeholder">Placeholder Link</a></li>
-        </ul>
+  
+    <img src="media/Uwabor_Portfolio_Headshot_2048x2048.png" class="left-img" alt="Headshot image of Emily Uwabor" width="250" height="250">
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus adipisci deserunt ad, dignissimos ipsum magnam laudantium alias fugit eos, odio, sit maiores officia. Aliquam quia fuga distinctio eveniet eius ratione quas in vero nesciunt tempora voluptatibus omnis beatae sunt, recusandae enim nobis pariatur nemo eum quisquam nam deleniti minima sed.
+    </p>
+
+      <aside class="sidebar">
+      <h3>Quick Links</h3>
+      <ul>
+        <li>a href="placeholder">Placeholder Link</a></li>
+        <li>a href="placeholder">Placeholder Link</a></li>
+        <li>a href="placeholder">Placeholder Link</a></li>
+      </ul>
     </aside>
-
+    
   </body>
-
-
 </html>
