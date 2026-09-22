@@ -6,10 +6,14 @@
     <title>Kailyn and Her Books - Work Samples</title>
   </head>
   <body>
-    <header>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header
+      role="banner"
+      aria-label="Site Header for Kailyn Shobert and Her Books"
+    >
       <h1>Kailyn Shobert and Her Books</h1>
     </header>
-    <nav>
+    <nav role="navigation" aria-label="Main Navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
@@ -28,9 +32,9 @@
         </ul>
       </ul>
     </nav>
-    <main>
-      <section>
-        <h2>Work Samples</h2>
+    <main role="main" id="main" aria-labelledby="main-content">
+      <section role="region" aria-labelledby="work-samples">
+        <h2 id="work-samples">Work Samples</h2>
         <p>
           On this page, you'll find a collection of my work samples. I mostly
           work in marketing and writing, but I also enjoy creating content for
@@ -38,8 +42,8 @@
           and capabilities!
         </p>
       </section>
-      <section>
-        <h3>Marketing Projects</h3>
+      <section role="region" aria-labelledby="marketing-projects">
+        <h3 id="marketing-projects">Marketing Projects</h3>
         <p>
           This is where a marketing project sample would go. It could include
           details about the project, the goals, the strategies used, and the
