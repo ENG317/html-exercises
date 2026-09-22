@@ -6,14 +6,15 @@
     <title>The Romance Index</title>
 </head> 
 <body> 
-    <header>
-<img src="images/ romance-index-books-flowers-800x320.jpg"
-     srcset="images/romance-index-books-flowers-400x160.jpg 400w, images/romance-index-books-flowers-800x320.jpg 800w, images/romance-index-books-flowers-1200x480.jpg 1200w"
-     sizes="800"
-     width="320"
-     alt="Romance Books and Flowers">
+    <header role="banner">
+        <img src="images/romance-index-books-flowers-800x320.jpg"
+            srcset="images/romance-index-books-flowers-400x160.jpg 400w, images/romance-index-books-flowers-800x320.jpg 800w, images/romance-index-books-flowers-1200x480.jpg 1200w"
+            sizes="100vw"
+            width="800"
+            height="320" 
+            alt="Romance Books and Flowers">
         <h1>The Romance Index</h1>
-        <nav>
+        <nav role="navigation" aria-label="Main Navigation">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Browse Tropes</a></li>
@@ -21,14 +22,14 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2> Find Your Next Love Story</h2>
+    <main role="main">
+        <section aria-labelledby="find-next-read">
+            <h2 id="find-next-read">Find Your Next Love Story</h2>
             <p>Because sometimes “I want a romance” isn't specific enough. Find your next read by the tropes you can't resist.</p>
             
         </section>
-        <section>
-            <h2>Browse by Trope</h2>
+        <section aria-labelledby="browse-tropes">
+            <h2 id="browse-tropes">Browse by Trope</h2>
             <ul>
                 <li>Enemies to Lovers</li>
                 <li>Friends to Lovers</li>
