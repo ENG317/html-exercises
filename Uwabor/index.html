@@ -70,35 +70,36 @@
   <body>
     <header class="site-header" aria-labelledby="site-title">
       <div class="title-container">
-        <img
-        src="media/animated_birds_banner.png" class="moving-banner" width="150" height="150">
+        <img src="assets/images/animated_birds_banner.png" aria-label="flappy-birds" class="moving-banner" width="150" height="150">
         <h1 id="site-title">Welcome to My Portfolio</h1>
       </div>
             
       <nav class="navbar" aria-label="Main navigation">
         <ul>
-          <li><a href="index.html">Home</a></li
-          <li><a href="videography.html">Videography</a></li>
-          <li><a href="paintings.html">Paintings</a></li>
-          <li><a href="contactme.html">Contact Me</a></li>
+          <li><a href="pages/index.html">Home</a></li
+          <li><a href="pages/videography.html">Videography</a></li>
+          <li><a href="pages/paintings.html">Paintings</a></li>
+          <li><a href="pages/contactme.html">Contact Me</a></li>
         </ul>
       </nav>
     </header>
 
 
-    <main aria-label="Main content">
+    <main>
       <section class="About me" aria-labelledby="about-me-heading">
-        <img
-src="media/Uwabor_Portfolio_Headshot_2048x2048.png" class="left-img" alt="Headshot image of Emily Uwabor" width="250" height="250">
-    <img src="media/Uwabor_Portfolio_Headshot_512x512.png" 
-              srcset="
-                media/Uwabor_Portfolio_Headshot_512x512.png 512w,
-                media/Uwabor_Portfolio_Headshot_1024x1024.png 1024w,
-                media/Uwabor_Portfolio_Headshot_2048x2048.png 2048w
-              "
-              class="left-img" width="250" height="250"
-              alt="Headshot image of Emily Uwabor"
-    />
+        <img src="assets/images/Uwabor_Portfolio_Headshot_250x250.png" 
+        class="left-img" 
+        alt="Headshot image of Emily Uwabor" 
+        width="250" 
+        height="250"
+        
+        srcset="
+          assets/images/Uwabor_Portfolio_Headshot_512x512.png 512w,
+          assets/images/Uwabor_Portfolio_Headshot_1024x1024.png 1024w,
+          assets/images/Uwabor_Portfolio_Headshot_2048x2048.png 2048w
+          "
+          />
+
         <div>
           <h2 id="about-me-heading">About Me</h2> 
           <p>
@@ -107,12 +108,12 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus adipisci d
         </div>
       </section>
       
-      <aside class="sidebar" aria-label="Sidebar with quick links">
+      <aside class="sidebar" aria-labelledby="Sidebar with quick links">
         <h2>Quick Links</h2>
         <ul>
-          <li>a href="placeholder" aria-label="Placeholder one">Placeholder Link</a></li>
-          <li>a href="placeholder" aria-label="Placeholder two">Placeholder Link</a></li>
-          <li>a href="placeholder" aria-label="Placeholder three">Placeholder Link</a></li>
+          <li>a href="placeholder">Placeholder Link</a></li>
+          <li>a href="placeholder">Placeholder Link</a></li>
+          <li>a href="placeholder">Placeholder Link</a></li>
         </ul>
       </aside>
     </main>
