@@ -68,14 +68,14 @@
   </head>
 
   <body>
-    <header class="site-header">
+    <header class="site-header" aria-labelledby="site-title">
       <div class="title-container">
         <img
         src="media/animated_birds_banner.png" class="moving-banner" width="150" height="150">
-        <h1>Welcome to My Portfolio</h1>
+        <h1 id="site-title">Welcome to My Portfolio</h1>
       </div>
             
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li
           <li><a href="videography.html">Videography</a></li>
@@ -86,14 +86,10 @@
     </header>
 
 
-    <main>
-      <section class="About me">
+    <main aria-label="Main content">
+      <section class="About me" aria-labelledby="about-me-heading">
         <img
 src="media/Uwabor_Portfolio_Headshot_2048x2048.png" class="left-img" alt="Headshot image of Emily Uwabor" width="250" height="250">
-        <div class="About Me">
-          <h2>About Me</h2>
-          <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus adipisci deserunt ad, dignissimos ipsum magnam laudantium alias fugit eos, odio, sit maiores officia. Aliquam quia fuga distinctio eveniet eius ratione quas in vero nesciunt tempora voluptatibus omnis beatae sunt, recusandae enim nobis pariatur nemo eum quisquam nam deleniti minima sed.
     <img src="media/Uwabor_Portfolio_Headshot_512x512.png" 
               srcset="
                 media/Uwabor_Portfolio_Headshot_512x512.png 512w,
@@ -103,22 +99,24 @@ src="media/Uwabor_Portfolio_Headshot_2048x2048.png" class="left-img" alt="Headsh
               class="left-img" width="250" height="250"
               alt="Headshot image of Emily Uwabor"
     />
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus adipisci deserunt ad, dignissimos ipsum magnam laudantium alias fugit eos, odio, sit maiores officia. Aliquam quia fuga distinctio eveniet eius ratione quas in vero nesciunt tempora voluptatibus omnis beatae sunt, recusandae enim nobis pariatur nemo eum quisquam nam deleniti minima sed.
-    </p>
+        <div>
+          <h2 id="about-me-heading">About Me</h2> 
+          <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus adipisci deserunt ad, dignissimos ipsum magnam laudantium alias fugit eos, odio, sit maiores officia. Aliquam quia fuga distinctio eveniet eius ratione quas in vero nesciunt tempora voluptatibus omnis beatae sunt, recusandae enim nobis pariatur nemo eum quisquam nam deleniti minima sed.
+</p>
         </div>
       </section>
       
-      <aside class="sidebar">
+      <aside class="sidebar" aria-label="Sidebar with quick links">
         <h2>Quick Links</h2>
         <ul>
-          <li>a href="placeholder">Placeholder Link</a></li>
-          <li>a href="placeholder">Placeholder Link</a></li>
-          <li>a href="placeholder">Placeholder Link</a></li>
+          <li>a href="placeholder" aria-label="Placeholder one">Placeholder Link</a></li>
+          <li>a href="placeholder" aria-label="Placeholder two">Placeholder Link</a></li>
+          <li>a href="placeholder" aria-label="Placeholder three">Placeholder Link</a></li>
         </ul>
       </aside>
     </main>
+
     <footer>
       <p> 2026 My Portfolio </p>
     </footer>
