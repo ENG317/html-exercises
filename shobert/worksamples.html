@@ -6,17 +6,24 @@
     <title>Kailyn and Her Books - Work Samples</title>
   </head>
   <body>
-    <header>
-      <h1>Kailyn Shobert and Her Books</h1>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header role="banner" aria-labelledby="page-title">
+      <h1 id="page-title">Kailyn Shobert and Her Books</h1>
     </header>
-    <nav>
+    <nav role="navigation" aria-label="Main Navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="worksamples.html">Work Samples</a></li>
         <ul>
-          <li><a href="">Marketing Projects</a></li>
-          <li><a href="">Writing Samples</a></li>
+          <li>
+            <a href="#marketing-projects" class="skip-link"
+              >Marketing Projects</a
+            >
+          </li>
+          <li>
+            <a href="#writing-samples" class="skip-link">Writing Samples</a>
+          </li>
         </ul>
         <li><a href="bookreviews.html">Book Reviews</a></li>
         <ul>
@@ -28,9 +35,9 @@
         </ul>
       </ul>
     </nav>
-    <main>
-      <section>
-        <h2>Work Samples</h2>
+    <main role="main" id="main" aria-label="main-content">
+      <section role="region" aria-labelledby="work-samples">
+        <h2 id="work-samples">Work Samples</h2>
         <p>
           On this page, you'll find a collection of my work samples. I mostly
           work in marketing and writing, but I also enjoy creating content for
@@ -38,8 +45,8 @@
           and capabilities!
         </p>
       </section>
-      <section>
-        <h3>Marketing Projects</h3>
+      <section role="region" aria-labelledby="marketing-projects">
+        <h3 id="marketing-projects">Marketing Projects</h3>
         <p>
           This is where a marketing project sample would go. It could include
           details about the project, the goals, the strategies used, and the
@@ -47,6 +54,18 @@
           the project.
         </p>
       </section>
+      <section role="region" aria-labelledby="writing-samples">
+        <h3 id="writing-samples">Writing Samples</h3>
+        <p>
+          This is where a writing sample would go. It could include details
+          about the piece, the genre, the target audience, and any relevant
+          context. I would also include any relevant images or links to the
+          sample.
+        </p>
+      </section>
     </main>
+    <footer>
+      <p>&copy; 2026 Kailyn Shobert. All rights reserved.</p>
+    </footer>
   </body>
 </html>
