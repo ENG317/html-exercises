@@ -7,9 +7,23 @@
 </head>
 <body>
   <header>
-    <h1>Foster a Friend</h1>
-    <p>Bridging the gap between shelter pets and busy college students.</p>
-  </header>
+  <h1>Foster a Friend</h1>
+  <p>Bridging the gap between shelter pets and busy college students.</p>
+  <figure>
+    <img
+      src="assets/images/student-studying-with-dog-800x416.jpg"
+      srcset="
+        assets/images/student-studying-with-dog-400x208.jpg 400w,
+        assets/images/student-studying-with-dog-800x416.jpg 800w,
+        assets/images/student-studying-with-dog-1200x624.jpg 1200w
+      "
+      sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1200px"
+      alt="Smiling student lying on a bed writing in a notebook next to a laptop while a black and tan Doberman rests beside them"
+      width="800" height="416"
+    />
+    <figcaption>Short-term pet fostering provides companionship for college students while helping local shelter animals.</figcaption>
+  </figure>
+</header>
   <nav aria-label="Primary">
     <ul> 
     <li><a href="index.html" aria-current="page">Home</a></li>
@@ -19,21 +33,6 @@
     </ul>
   </nav>
   <main>
-
-    <figure>
-        <img
-          src="assets/images/pit-bull-mix-sits-on-ground-400x225.jpg"
-          srcset="
-            assets/images/foster-pit-bull-mix-patio-400x225.jpg 400w,
-            assets/images/foster-pit-bull-mix-patio-800x450.jpg 800w,
-            assets/images/foster-pit-bull-mix-patio-1200x675.jpg 1200w
-          "
-          sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1200px"
-          alt="Brown pit bull mix dog sitting calmly on a striped rug outdoors"
-          width="800" height="450"
-        />
-        <figcaption>Short-term pet fostering provides companionship for college students while helping local shelter animals.</figcaption>
-    </figure>
 
     <!-- SAVE A LIFE -->
     <section aria-labelledby="save-a-life-heading">
@@ -66,7 +65,7 @@
 
     <!-- QUICK TOOLS -->
     <section aria-labelledby="quick-tools-heading">
-        <h2 id="quick-tools-heading">Quick Action Tools</h2>
+        <h2> id= "quick-tools-heading">Quick Action Tools</h2>
         <p>Download Tools to Get Started:</p>
         <ul>
             <li><a href="housing.html#landlord-approval">Landlord Approval Email Template</a></li>
