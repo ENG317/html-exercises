@@ -10,14 +10,28 @@
       <h1>What is Software Engineering?</h1>
     </header>
     <nav>
+      <h2>Other Pages (Not Implemented)</h2>
       <ul>
         <li><a href="">How to Become a Software Engineer (Empty Link)</a></li>
         <li><a href="">About the Student Org (Empty Link)</a></li>
       </ul>
     </nav>
 
-    <!------------------- Quick Overview ------------------->
+    <!----- Table of Contents (Change to Aside Later?) ----->
     <section>
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#section1">Overview of Software Engineering</a></li>
+        <li><a href="#section2">Day-to-Day Life of a Software Engineer</a></li>
+        <li>
+          <a href="#section3">Skills Needed to Become a Software Engineer</a>
+        </li>
+        <li><a href="#section4">Career Outlook for Software Engineers</a></li>
+      </ul>
+    </section>
+
+    <!------------------- Quick Overview ------------------->
+    <section id="section1">
       <h2>Overview of Software Engineering</h2>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quo
@@ -34,7 +48,7 @@
     </section>
 
     <!------------------- DtD Life ------------------------->
-    <section>
+    <section id="section2">
       <h2>Day-to-Day Life of a Software Engineer</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id
@@ -65,7 +79,7 @@
     </section>
 
     <!------------------- Skills --------------------------->
-    <section>
+    <section id="section3">
       <h2>Skills Needed to Become a Software Engineer</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
@@ -99,7 +113,7 @@
     </section>
 
     <!------------------- Career Outlook ------------------->
-    <section>
+    <section id="section4">
       <h2>Career Outlook for Software Engineers</h2>
       <h3>Career Progression Ladder</h3>
       <p>
@@ -114,34 +128,51 @@
           <li>
             <!-- Track image container -->
             <div>
-              <img src="path/here.jpg" alt="Alternative text here" />
+              <img
+                srcset="
+                  assets/book-placeholder-image-400x400.jpeg    400w,
+                  assets/book-placeholder-image-750x750.jpeg    750w,
+                  assets/book-placeholder-image-1000x1000.jpeg 1000w
+                "
+                src="assets/book-placeholder-image-400x400.jpeg"
+                alt="A placeholder picture of some books"
+                width="400" height="400"
+              />
             </div>
             <!-- Track content container -->
             <div>
               <h4>Management</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
-        eligendi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis, eligendi!
               </p>
             </div>
           </li>
           <li>
             <!-- Track image container -->
             <div>
-              <img src="path/here.jpg" alt="Alternative text here" />
+              <img
+                srcset="
+                  assets/book-placeholder-image-400x400.jpeg    400w,
+                  assets/book-placeholder-image-750x750.jpeg    750w,
+                  assets/book-placeholder-image-1000x1000.jpeg 1000w
+                "
+                src="assets/book-placeholder-image-400x400.jpeg"
+                alt="A placeholder picture of some books"
+              />
             </div>
             <!-- Track content container -->
             <div>
               <h4>Individual Contributor</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
-        eligendi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis, eligendi!
               </p>
             </div>
           </li>
         </ul>
       </div>
-      
+
       <h3>Layoffs</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iste
