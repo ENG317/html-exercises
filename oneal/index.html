@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <title>THE BRUTE REVIEW</title>
   </head>
   <body>
@@ -15,7 +16,7 @@
       <h1>THE BRUTE REVIEW</h1>
       <p>Blunt Reviews about the Latests in the Arts!</p>
     </header>
-    <nav aria-label="Site Navigation">
+    <nav role="Site Navigation" aria-label="Site Navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="reviews.html">Go to Film Reviews</a></li>
@@ -24,9 +25,9 @@
       </ul>
     </nav>
     <!-- Body - Main Content -->
-    <main id="call-to-action-cards">
-      <section aria-label="Film Reviews">
-        <h2>Films: The Good and Bad</h2>
+    <main role="Information Paragraphs" id="call-to-action-cards">
+      <section role="Films" aria-labelledby="reviewsFilms">
+        <h2 id="reviewsFilms">Films: The Good and Bad</h2>
         <img
           src="images/oneal-film-image-625x350.jpg"
           width="625"
@@ -38,8 +39,8 @@
           <a href="reviews.html">Reviews</a>
         </li>
       </section>
-      <section aria-label="TV Reviews">
-        <h2>Television</h2>
+      <section role="Television" aria-labelledby="reviewsTV">
+        <h2 id="reviewsTV">Television</h2>
         <img
           src="images/oneal-tv-image-625x350.jpeg"
           width="625"
@@ -51,17 +52,17 @@
           <a href="tv-reviews.html">Reviews</a>
         </li>
       </section>
-      <section aria-label="Book Reviews">
-        <h2>Books</h2>
+      <section role="Books" aria-labelledby="reviewsBooks">
+        <h2 id="reviewsBooks">Book Reviews</h2>
         <img
-          src="images/oneal-books-medium-1920x1280.jpg"
-          width="800"
-          height="420"
+          src="images/oneal-books-small-625x426.jpg"
+          width="625"
+          height="426"
           alt="Books Image"
           srcset="
-            images/oneal-books-large-2400x1600.jpg 800w
-            images/oneal-books-medium-1920x1280.jpg 1920w,
-            images/oneal-books-small-625x426.jpg     625w
+            images/oneal-books-large-2400x1600.jpg  820w,
+            images/oneal-books-medium-1920x1280.jpg 800w,
+            images/oneal-books-small-625x426.jpg    625w
           "
         />
         <p>Reviewing the Latest and Greatest Pieces of Literature!</p>
@@ -71,7 +72,7 @@
       </section>
     </main>
   </body>
-  <footer aria-label="Site Footer">
-    <p>&copy; 2026 THE BRUTE REVIEW</p>
+  <footer role="page end" aria-labelledby="Site Footer">
+    <p id="Site Footer">&copy; 2026 THE BRUTE REVIEW</p>
   </footer>
 </html>
