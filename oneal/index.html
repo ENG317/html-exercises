@@ -1,39 +1,71 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <title>THE BRUTE REVIEW</title>
   </head>
   <body>
-    <header>
+    <a href="main-content" class="skip-link">Skip to Main Content</a>
+    <img
+      src="images/oneal-bird-image-641x1126.jpg"
+      width="285"
+      height="425"
+      alt="Site Logo"
+    />
+    <!-- Title of Page -->
+    <header role="Webpage Title" aria-label="Page Title">
       <h1>THE BRUTE REVIEW</h1>
       <p>Blunt Reviews about the Latests in the Arts!</p>
     </header>
-    <nav>
+    <nav role="Navigation" aria-label="Primary Navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="reviews.html">Film Reviews</a></li>
-        <li><a href="tv-reviews.html">TV Reviews</a></li>
-        <li><a href="book-reviews.html">Book Reviews</a></li>
+        <li><a href="reviews.html">Go to Film Reviews</a></li>
+        <li><a href="tv-reviews.html">Go to TV Reviews</a></li>
+        <li><a href="book-reviews.html">Go to Book Reviews</a></li>
       </ul>
     </nav>
-
-    <main id="call-to-action-cards">
-      <section>
-        <h2>Films: The Good and Bad</h2>
+    <!-- Body - Main Content -->
+    <main role="Pages Information" id="call-to-action-cards">
+      <section role="Films" aria-labelledby="reviewsFilms">
+        <h2 id="reviewsFilms">Films: The Good and Bad</h2>
+        <img
+          src="images/oneal-film-image-625x350.jpg"
+          width="625"
+          height="350"
+          alt="Film Reel"
+        />
         <p>Reviewing the Best and Worst Films Both New and Old!</p>
         <li>
           <a href="reviews.html">Reviews</a>
         </li>
       </section>
-      <section>
-        <h2>Television</h2>
+      <section role="Television" aria-labelledby="reviewsTV">
+        <h2 id="reviewsTV">Television</h2>
+        <img
+          src="images/oneal-tv-image-625x350.jpeg"
+          width="625"
+          height="350"
+          alt="TV Stacks"
+        />
         <p>Discussing the Best and Worst TV Shows!</p>
         <li>
           <a href="tv-reviews.html">Reviews</a>
         </li>
       </section>
-      <section>
-        <h2>Books</h2>
+      <section role="Books" aria-labelledby="reviewsBooks">
+        <h2 id="reviewsBooks">Book Reviews</h2>
+        <img
+          src="images/oneal-books-small-625x426.jpg"
+          width="625"
+          height="426"
+          alt="Pile of Books"
+          srcset="
+            images/oneal-books-large-2400x1600.jpg  820w,
+            images/oneal-books-medium-1920x1280.jpg 800w,
+            images/oneal-books-small-625x426.jpg    625w
+          "
+        />
         <p>Reviewing the Latest and Greatest Pieces of Literature!</p>
         <li>
           <a href="book-reviews.html">Reviews</a>
@@ -41,4 +73,7 @@
       </section>
     </main>
   </body>
+  <footer role="page end" aria-labelledby="Site Footer">
+    <p id="Site Footer">&copy; 2026 THE BRUTE REVIEW</p>
+  </footer>
 </html>
