@@ -7,12 +7,26 @@
 </head>
 <body>
   <header>
-    <h1>Foster a Friend</h1>
-    <p>Bridging the gap between shelter pets and busy college students.</p>
-  </header>
-  <nav>
+  <h1>Foster a Friend</h1>
+  <p>Bridging the gap between shelter pets and busy college students.</p>
+  <figure>
+    <img
+      src="assets/images/student-studying-with-dog-800x416.jpg"
+      srcset="
+        assets/images/student-studying-with-dog-400x208.jpg 400w,
+        assets/images/student-studying-with-dog-800x416.jpg 800w,
+        assets/images/student-studying-with-dog-1200x624.jpg 1200w
+      "
+      sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1200px"
+      alt="Smiling student lying on a bed writing in a notebook next to a laptop while a black and tan Doberman rests beside them"
+      width="800" height="416"
+    />
+    <figcaption>Short-term pet fostering provides companionship for college students while helping local shelter animals.</figcaption>
+  </figure>
+</header>
+  <nav aria-label="Primary">
     <ul> 
-    <li><strong>Home</strong></li>
+    <li><a href="index.html" aria-current="page">Home</a></li>
     <li><a href="housing.html">Housing</a></li>
     <li><a href="financials.html">Financials</a></li>
     <li><a href="rescue.html">Rescue Directory</a></li>
@@ -20,32 +34,17 @@
   </nav>
   <main>
 
-    <figure>
-        <img
-          src="assets/images/pit-bull-mix-sits-on-ground-400x225.jpg"
-          srcset="
-            assets/images/foster-pit-bull-mix-patio-400x225.jpg 400w,
-            assets/images/foster-pit-bull-mix-patio-800x450.jpg 800w,
-            assets/images/foster-pit-bull-mix-patio-1200x675.jpg 1200w
-          "
-          sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1200px"
-          alt="Brown pit bull mix dog sitting calmly on a striped rug outdoors"
-          width="800" height="450"
-        />
-        <figcaption>Short-term pet fostering provides companionship for college students while helping local shelter animals.</figcaption>
-    </figure>
-
     <!-- SAVE A LIFE -->
-    <section>
-      <h2>Save a Life Without a 15-Year Commitment</h2>
+    <section aria-labelledby="save-a-life-heading">
+      <h2 id="save-a-life-heading">Save a Life Without a 15-Year Commitment</h2>
       <p>
         We connect college students with local animal shelters to provide temporary homes for pets in need. Our goal is to help reduce the number of animals in shelters while giving students the opportunity to experience the joy of pet ownership.
       </p>
     </section>
 
     <!-- MYTHS -->
-    <section>
-      <h2>Common Myths</h2>
+    <section aria-labelledby="common-myths-heading">
+      <h2 id="common-myths-heading">Common Myths</h2>
       <ul>
         <li>Myth: Living in an off-campus apartment disqualifies you. <br>Fact: Most shelters welcome student renters with landlord approval!</li>
         <li>Myth: Fostering is too expensive. <br>Fact: Shelters provide food, crates, and medical care for free.</li>
@@ -54,8 +53,8 @@
     </section>
 
     <!-- HOW IT WORKS -->
-    <section>
-        <h2>How it Works</h2>
+    <section aria-labelledby="how-it-works-heading">
+        <h2 id="how-it-works-heading">How it Works</h2>
         <ol>
             <li>Get roommate and landlord consent.</li>
             <li>Fill out a shelter application.</li>
@@ -65,8 +64,8 @@
     </section>
 
     <!-- QUICK TOOLS -->
-    <section>
-        <h2>Quick Action Tools</h2>
+    <section aria-labelledby="quick-tools-heading">
+        <h2 id= "quick-tools-heading">Quick Action Tools</h2>
         <p>Download Tools to Get Started:</p>
         <ul>
             <li><a href="housing.html#landlord-approval">Landlord Approval Email Template</a></li>
