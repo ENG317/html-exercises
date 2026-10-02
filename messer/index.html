@@ -26,18 +26,38 @@
         The purpose of this website is to expose young adult readers and writers to contemporary and classic works of fiction writing. Through my reviews and book descriptions, I hope to inspire young adult readers to give reading the story a shot themselves and join in on the timeless discussions surrounding each piece!
       </p>
     </section>
-    <nav role="navigation" aria-label="Primary Directory">
+
+    <!-- LINDGREN COMMENT
+      I'll add this suggestion, but you wouldn't want to have a nav inside a nav in this case. That's a little tricky. Now that I think I understand your design goals here, I'd consider this pattern, where you wrap it all in a nav, then remove the nested nav menu.
+
+      I also wonder if "Author Directory" makes more sense as a label. IF so, maybe consider updating the heading too and converting it to a aria-labelledby.
+
+      You also forgot to update the closing tag for the `nav`.
+
+      <nav role="navigation" aria-label="Primary Directory">
+        <h2>Find a Review</h2>
+        <p>
+          Locate reviewed books by title of author.
+        </p>
+        <nav aria-label="Directory">
+          <ul>
+            <li><a href="">A-Z Titles.</a></li>
+            <li><a href="">A-Z Authors.</a></li>
+          </ul>
+        </nav>
+      </section>
+    -->
+    <nav role="navigation" aria-label="Author Reviews Directory">
       <h2>Find a Review</h2>
       <p>
         Locate reviewed books by title of author.
       </p>
-      <nav aria-label="Directory">
-        <ul>
-          <li><a href="">A-Z Titles.</a></li>
-          <li><a href="">A-Z Authors.</a></li>
-        </ul>
-      </nav>
-    </section>
+      <ul>
+        <li><a href="">A-Z Titles.</a></li>
+        <li><a href="">A-Z Authors.</a></li>
+      </ul>
+    </nav>
+
     <section aria-labelledby="Book-and-Author-of-the-Month">
       <h2 id="Book-and-Author-of-the-Month">Book and Author of the Month</h2>
       <p>
