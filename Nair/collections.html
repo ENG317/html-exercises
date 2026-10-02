@@ -8,10 +8,8 @@
   </head>
 
   <body>
-    <!-- Header Landmark -->
-
-    <header>
-      <h1>Product Catalog</h1>
+    <header role="banner" aria-label="Site header">
+      <h1 id="page-title">Product Catalog</h1>
 
       <nav aria-label="Main Navigation">
         <ul>
@@ -24,58 +22,35 @@
       </nav>
     </header>
 
-    <!-- Main Landmark -->
-
-    <main>
-      <!-- Categories -->
-
-      <section aria-label="Categories">
-        <h2>Categories</h2>
-
-        <div>
-          <p>T-shirts, hoodies, dresses, skirts, and more.</p>
-        </div>
+    <main id="main-content" role="main" aria-labelledby="page-title">
+      <section aria-labelledby="categories-heading">
+        <h2 id="categories-heading">Categories</h2>
+        <p>T-shirts, hoodies, dresses, skirts, and more.</p>
       </section>
 
-      <!-- Product Listings -->
-
-      <section aria-label="Product Listings">
-        <h2>Product Listings</h2>
-
-        <div>
-          <p>View product images and descriptions.</p>
-        </div>
+      <section aria-labelledby="product-listings-heading">
+        <h2 id="product-listings-heading">Product Listings</h2>
+        <p>View product images and descriptions.</p>
       </section>
 
-      <!-- Filters -->
-
-      <section aria-label="Filters">
-        <h2>Filters</h2>
-
-        <div>
-          <p>Filter by size, waist measurements, color, design, and price.</p>
-        </div>
+      <section aria-labelledby="filters-heading">
+        <h2 id="filters-heading">Filters</h2>
+        <p>Filter by size, waist measurements, color, design, and price.</p>
       </section>
 
-      <!-- Featured Items -->
-
-      <section aria-label="Featured Items">
-        <h2>Featured Items</h2>
-
-        <div>
-          <p>Explore popular products.</p>
-        </div>
+      <section aria-labelledby="featured-items-heading">
+        <h2 id="featured-items-heading">Featured Items</h2>
+        <p>Explore popular products.</p>
       </section>
 
-      <!-- Product Comparison -->
-
-      <section aria-label="Product Comparison">
-        <h2>Product Comparison</h2>
-
-        <div>
-          <p>Compare key product details.</p>
-        </div>
+      <section aria-labelledby="product-comparison-heading">
+        <h2 id="product-comparison-heading">Product Comparison</h2>
+        <p>Compare key product details.</p>
       </section>
     </main>
+
+    <footer role="contentinfo" aria-label="Site footer">
+      <p>LaLaLa's Designer Clothing</p>
+    </footer>
   </body>
 </html>

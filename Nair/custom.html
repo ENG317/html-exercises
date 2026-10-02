@@ -8,10 +8,8 @@
   </head>
 
   <body>
-    <!-- Header Landmark -->
-
-    <header>
-      <h1>Custom Designs</h1>
+    <header role="banner" aria-label="Site header">
+      <h1 id="page-title">Custom Designs</h1>
 
       <nav aria-label="Main Navigation">
         <ul>
@@ -24,58 +22,35 @@
       </nav>
     </header>
 
-    <!-- Main Landmark -->
-
-    <main>
-      <!-- Upload Area -->
-
-      <section aria-label="Upload Area">
-        <h2>Upload Area</h2>
-
-        <div>
-          <p>Upload images or logos for your design.</p>
-        </div>
+    <main id="main-content" role="main" aria-labelledby="page-title">
+      <section aria-labelledby="upload-area-heading">
+        <h2 id="upload-area-heading">Upload Area</h2>
+        <p>Upload images or logos for your design.</p>
       </section>
 
-      <!-- Design Editor -->
-
-      <section aria-label="Design Editor">
-        <h2>Design Editor</h2>
-
-        <div>
-          <p>Add text and graphics to your clothing design.</p>
-        </div>
+      <section aria-labelledby="design-editor-heading">
+        <h2 id="design-editor-heading">Design Editor</h2>
+        <p>Add text and graphics to your clothing design.</p>
       </section>
 
-      <!-- Color Selection -->
-
-      <section aria-label="Color Selection">
-        <h2>Color Selection</h2>
-
-        <div>
-          <p>Choose colors for your product.</p>
-        </div>
+      <section aria-labelledby="color-selection-heading">
+        <h2 id="color-selection-heading">Color Selection</h2>
+        <p>Choose colors for your product.</p>
       </section>
 
-      <!-- Live Preview -->
-
-      <section aria-label="Live Preview">
-        <h2>Live Preview</h2>
-
-        <div>
-          <p>Preview your design before ordering.</p>
-        </div>
+      <section aria-labelledby="live-preview-heading">
+        <h2 id="live-preview-heading">Live Preview</h2>
+        <p>Preview your design before ordering.</p>
       </section>
 
-      <!-- Save and Add to Cart -->
-
-      <section aria-label="Save and Add to Cart">
-        <h2>Save and Add to Cart</h2>
-
-        <div>
-          <p>Save your design and purchase your product.</p>
-        </div>
+      <section aria-labelledby="save-cart-heading">
+        <h2 id="save-cart-heading">Save and Add to Cart</h2>
+        <p>Save your design and purchase your product.</p>
       </section>
     </main>
+
+    <footer role="contentinfo" aria-label="Site footer">
+      <p>LaLaLa's Designer Clothing</p>
+    </footer>
   </body>
 </html>
