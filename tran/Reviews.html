@@ -6,25 +6,84 @@
   <title>Custom Reviews</title>
 </head>
 <body>
-  <h1>Customer reviews
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-    <p id="noWhitespace">sourcandies4evr11.</p>
+<header>
+    <hgroup>
+      <h1>Customer reviews</h1>
+      <p>sourcandies4evr11.</p>
+    </hgroup>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </p>
+    <!-- Design TODO: Create a textual multiline effect here -->
+    <p>warheads are sour.</p>
+  </header>
 
-<p id="whitespace">warheads
-    are
-        sour.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laboriosam dicta quia consectetur doloremque dolorum tenetur, error consequatur itaque. Quae in porro fuga reprehenderit officia blanditiis tempore totam accusamus dolore!</p>
+  <!-- your nav? -->
 
-    <h2>anonymous user
+  <!-- Always need a main for your main content -->
+  <main>
+    <!-- HTML creates scoped units of information, so if the main element will contain perhaps a product and then some reviews of it, then it seems like you need a section or article for the product description landmark, then a section for the review content area. -->
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, architecto! Modi facilis adipisci vitae repudiandae unde cumque ipsam consequatur, iste aut nostrum fugit expedita eveniet amet et at debitis excepturi!</p>
+    <!-- Product Description container -->
+    <article>
+      <div>
+        <img src="" alt="">
+      </div>
+      <div>
+        <h2>Candy Name Here</h2>
+        <p>
+          Description content here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti unde omnis iure harum ea voluptatem nobis eligendi pariatur dicta corrupti eos, placeat quidem ipsam quasi, iste.
+        </p>
+      </div>
+    </article>
+    <!-- Reviews container -->
+     <section>
+      <h2>Reviews</h2>
 
-      <h3> anonymous user 
+      <!-- Reviews wrapped in ordered list, due to sequence semantics -->
+      <ol>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit quae tempora eveniet rerum ex in cupiditate. Porro eos perferendis omnis reiciendis suscipit, possimus, atque dolore veniam, vitae nostrum iste?</p>
-        
-      </h3>
-    </h2>
-  </h1>
+        <!-- Each review contained as a list item -->
+        <li>
+
+          <!-- Reviewer name/info container -->
+          <div>
+            <p>Reviewer Name</p>
+          </div>
+
+          <!-- Review content container -->
+          <div>
+            <p>
+              Review content in here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam pariatur omnis ex, tempora accusamus a molestias dignissimos facere, numquam placeat distinctio saepe explicabo commodi? Ut, aliquam! Numquam, totam voluptatum?
+            </p>
+            <p>
+              Review content in here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam pariatur omnis ex, tempora accusamus a molestias dignissimos facere, numquam placeat distinctio saepe explicabo commodi? Ut, aliquam! Numquam, totam voluptatum?
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <!-- Reviewer name -->
+          <div>
+            <p>Reviewer Name</p>
+          </div>
+          <!-- Review content -->
+          <div>
+            <p>
+              Review content in here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam pariatur omnis ex, tempora accusamus a molestias dignissimos facere, numquam placeat distinctio saepe explicabo commodi? Ut, aliquam! Numquam, totam voluptatum?
+            </p>
+            <p>
+              Review content in here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam pariatur omnis ex, tempora accusamus a molestias dignissimos facere, numquam placeat distinctio saepe explicabo commodi? Ut, aliquam! Numquam, totam voluptatum?
+            </p>
+          </div>
+        </li>
+      </ol>
+     </section>
+  </main>
+
+  <!-- Footer to use across the site? -->
+   <footer>
+
+   </footer>
 </body>
 </html>
