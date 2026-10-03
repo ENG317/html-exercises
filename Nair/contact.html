@@ -8,10 +8,10 @@
   </head>
 
   <body>
-    <!-- Header Landmark -->
+    <a href="#main-content">Skip to main content</a>
 
-    <header>
-      <h1>Shipping and FAQ</h1>
+    <header role="banner" aria-label="Site header">
+      <h1 id="page-title">Contact</h1>
 
       <nav aria-label="Main Navigation">
         <ul>
@@ -24,58 +24,52 @@
       </nav>
     </header>
 
-    <!-- Main Landmark -->
+    <main id="main-content" role="main" aria-labelledby="page-title">
+      <section aria-labelledby="shipping-heading">
+        <h2 id="shipping-heading">Shipping Information</h2>
 
-    <main>
-      <!-- Shipping Information -->
-
-      <section aria-label="Shipping Information">
-        <h2>Shipping Information</h2>
-
-        <div>
-          <p>View delivery times and shipping costs.</p>
-        </div>
+        <p>
+          View delivery times, available shipping options, and shipping costs
+          before completing your order.
+        </p>
       </section>
 
-      <!-- Return Policy -->
+      <section aria-labelledby="return-policy-heading">
+        <h2 id="return-policy-heading">Return Policy</h2>
 
-      <section aria-label="Return Policy">
-        <h2>Return Policy</h2>
-
-        <div>
-          <p>Learn about refunds and exchanges.</p>
-        </div>
+        <p>
+          Learn about refunds, exchanges, and information related to returning
+          customized clothing.
+        </p>
       </section>
 
-      <!-- FAQ -->
+      <section aria-labelledby="faq-heading">
+        <h2 id="faq-heading">FAQ</h2>
 
-      <section aria-label="Frequently Asked Questions">
-        <h2>FAQ</h2>
-
-        <div>
-          <p>Find answers to common questions.</p>
-        </div>
+        <p>
+          Find answers to common questions about customization, products,
+          pricing, shipping, and ordering.
+        </p>
       </section>
 
-      <!-- Order Tracking -->
+      <section aria-labelledby="order-tracking-heading">
+        <h2 id="order-tracking-heading">Order Tracking</h2>
 
-      <section aria-label="Order Tracking">
-        <h2>Order Tracking</h2>
-
-        <div>
-          <p>Check your order status.</p>
-        </div>
+        <p>Check the status of an order after it has been placed.</p>
       </section>
 
-      <!-- Contact Support -->
+      <section aria-labelledby="contact-support-heading">
+        <h2 id="contact-support-heading">Contact Support</h2>
 
-      <section aria-label="Contact Support">
-        <h2>Contact Support</h2>
-
-        <div>
-          <p>Get help by email or chat.</p>
-        </div>
+        <p>
+          Get help with customization, orders, shipping, returns, or other
+          questions about LaLaLa's Designer Clothing.
+        </p>
       </section>
     </main>
+
+    <footer role="contentinfo" aria-label="Site footer">
+      <p>LaLaLa's Designer Clothing</p>
+    </footer>
   </body>
 </html>
