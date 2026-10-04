@@ -7,34 +7,84 @@
 </head>
 <header> 
 <body>
-  <main> 
-    <nav> 
-      <ul>
-        <link rel="stylesheet" href="Customer Reviews">
-      </ul>
-    </nav>
-  <h1>Customer reviews 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-    <p id="noWhitespace">sourcandies4evr11.</p>
+<header>
+  <hgroup>
+    <h1>Customer reviews</h1>
+    <p>sourcandies4evr11.</p>
+  </hgroup>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+  </p>
+  <p id="noWhitespace">sourcandies4evr11.</p>
+  <p id="whitespace">warheads are sour.</p>
+</header>
 
-<p id="whitespace">warheads
-    are
-        sour.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laboriosam dicta quia consectetur doloremque dolorum tenetur, error consequatur itaque. Quae in porro fuga reprehenderit officia blanditiis tempore totam accusamus dolore!</p>
-<section> 
-    <h2>Anonymous user
+<nav>
+  <ul>
+    <li><a href="Customer Reviews">Customer Reviews</a></li>
+  </ul>
+</nav>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, architecto! Modi facilis adipisci vitae repudiandae unde cumque ipsam consequatur, iste aut nostrum fugit expedita eveniet amet et at debitis excepturi!</p>
+<main>
+  <!-- HTML creates scoped units of information, so if the main element will contain perhaps a product and then some reviews of it, then it seems like you need a section or article for the product description landmark, then a section for the review content area. -->
 
-      <h3> Terms and conditions 
+    <!-- Product Description container -->
+    <article>
+      <div>
+        <img src="" alt="">
+      </div>
+      <div>
+        <h2>Candy Name Here</h2>
+        <p>
+          Description content here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti unde omnis iure harum ea voluptatem nobis eligendi pariatur dicta corrupti eos, placeat quidem ipsam quasi, iste.
+        </p>
+      </div>
+    </article>
+    <!-- Reviews container -->
+     <section>
+      <h2>Reviews</h2>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit quae tempora eveniet rerum ex in cupiditate. Porro eos perferendis omnis reiciendis suscipit, possimus, atque dolore veniam, vitae nostrum iste?</p>
-        
-      </h3>
-    </h2>
-  </h1> 
+      <h2>Reviews</h2>
+
+      <p>Terms and conditions</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit quae tempora eveniet rerum ex in cupiditate. Porro eos perferendis omnis reiciendis suscipit, possimus, atque dolore veniam, vitae nostrum iste?
+      </p>
+
+      <!-- Reviews wrapped in ordered list, due to sequence semantics -->
+      <ol>
+        <li>
+          <div>
+            <p>Reviewer Name</p>
+          </div>
+          <div>
+            <p>
+              Review content in here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam pariatur omnis ex, tempora accusamus a molestias dignissimos facere, numquam placeat distinctio saepe explicabo commodi? Ut, aliquam! Numquam, totam voluptatum?
+            </p>
+            <p>
+              Review content in here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam pariatur omnis ex, tempora accusamus a molestias dignissimos facere, numquam placeat distinctio saepe explicabo commodi? Ut, aliquam! Numquam, totam voluptatum?
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <p>Reviewer Name</p>
+          </div>
+          <div>
+            <p>
+              Review content in here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam pariatur omnis ex, tempora accusamus a molestias dignissimos facere, numquam placeat distinctio saepe explicabo commodi? Ut, aliquam! Numquam, totam voluptatum?
+            </p>
+            <p>
+              Review content in here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam pariatur omnis ex, tempora accusamus a molestias dignissimos facere, numquam placeat distinctio saepe explicabo commodi? Ut, aliquam! Numquam, totam voluptatum?
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
   <footer>
-
   </footer>
 </body>
 </html>
