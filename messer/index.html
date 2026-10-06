@@ -19,49 +19,35 @@
     </header>
   </section> 
   <main>
-   <!-- MISSION (use comments as headings in your code) -->
     <section aria-labelledby="Website-Mission-Heading">
       <h2 id="Website-Mission-Heading">Website Mission</h2>
       <p>
         The purpose of this website is to expose young adult readers and writers to contemporary and classic works of fiction writing. Through my reviews and book descriptions, I hope to inspire young adult readers to give reading the story a shot themselves and join in on the timeless discussions surrounding each piece!
       </p>
     </section>
-
-    <!-- LINDGREN COMMENT
-      I'll add this suggestion, but you wouldn't want to have a nav inside a nav in this case. That's a little tricky. Now that I think I understand your design goals here, I'd consider this pattern, where you wrap it all in a nav, then remove the nested nav menu.
-
-      I also wonder if "Author Directory" makes more sense as a label. IF so, maybe consider updating the heading too and converting it to a aria-labelledby.
-
-      You also forgot to update the closing tag for the `nav`.
-
-      <nav role="navigation" aria-label="Primary Directory">
-        <h2>Find a Review</h2>
-        <p>
-          Locate reviewed books by title of author.
-        </p>
-        <nav aria-label="Directory">
-          <ul>
-            <li><a href="">A-Z Titles.</a></li>
-            <li><a href="">A-Z Authors.</a></li>
-          </ul>
-        </nav>
-      </section>
-    -->
-    <nav role="navigation" aria-label="Author Reviews Directory">
+     <nav role="navigation" aria-label="Primary Directory">
       <h2>Find a Review</h2>
       <p>
         Locate reviewed books by title of author.
       </p>
-      <ul>
-        <li><a href="">A-Z Titles.</a></li>
-        <li><a href="">A-Z Authors.</a></li>
-      </ul>
+        <ul>
+          <li><a href="second_page.html">Second Page</a></li>
+          <li><a href="">A-Z Authors and Titles.</a></li>
+        </ul>
     </nav>
-
     <section aria-labelledby="Book-and-Author-of-the-Month">
       <h2 id="Book-and-Author-of-the-Month">Book and Author of the Month</h2>
       <p>
-        The book of the month is A Farewell to Arms by Ernest Hemingway.
+        The book of the month is The Great Gatsby by F. Scott Fitzgerald.
+      </p>
+      <p>
+        F. Scott Fitzgerald (September 24, 1896 - December 21, 1940), was an American novelist known for his portrayal of the Jazz Age and the decadence of the wealthy elite. His most famous work, The Great Gatsby, is considered one of the greatest American novels of the 20th century.
+      </p>
+    </section>
+     <section aria-labelledby="Book-and-Author-of-Last-Month">
+      <h2 id="Book-and-Author-of-Last-Month">Book and Author of Last Month</h2>
+      <p>
+        The book of last month is A Farewell to Arms by Ernest Hemingway.
       </p>
       <p>
         Ernest Hemingway (July 21, 1899 - July 2, 1961), was a Nobel and Pulitzer prize winning author known for writing a variety of fiction novels, short stories, and non-fiction titles. Notably, he served in the Red Cross and as an ambulance driver during World War I, and spent much of his professional life as a journalist/reporter. His familiarity and close proximity to war and foreign conflict is often highlighted throughout his work.
