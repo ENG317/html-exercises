@@ -8,14 +8,23 @@
   <body>
     <!-- MARK: Basics that Everyone Should Have in their Wardrobe -->
     <header>
-      <h1>Basics that Everyone Should Have in their Wardrobe</h1>
+      <h1>Adra's Closet</h1>
     </header>
-    <main>
-      <p>
-        In an age where fast fashion is a consistent thorn in true style's side,
-        it's important to create a wardrobe that is both sustainable and
-        timeless.
-      </p>
+    <nav role="navigation" aria-label="Main Navigation">
+    <ul>
+      <li><a href="something.html">The Gallery</a></li>
+    </ul>
+  </nav>
+   <main role="main" id="main" aria-label="basics that everyone should have in their wardrobe"> 
+    <section role="region" aria-labelledby="wardrobe-basics">
+      <header role="banner">
+        <h2 id="wardrobe-basics">Basics that Everyone Should Have in their Wardrobe </h2>
+      </header>
+        <p>
+         In an age where fast fashion is a consistent thorn in true style's side,
+         it's important to create a wardrobe that is both sustainable and
+         timeless.
+        </p>
       <ol>
         <li>A basic white tee</li>
         <li>A pair of dark wash jeans</li>
@@ -23,45 +32,25 @@
         <li>A classic blazer</li>
         <li>A pair of walking shoes</li>
       </ol>
-
-      <!-- LINDGREN suggestion
-        Note how I've added structure to your page with the section element within this main.
-        Also, I offer one way to structure content units with the idea that each
-        section is like a CTA card to help people find the next page of more information
-        about this content. This strategy is called progressive disclosure.
-
-        Feel free to take or leave it, but you could apply this structure for the
-        Thrift content too.
-      -->
-      <!-- What's Already in your Closet? -->
+    </section>
       <section>
-        <header>
-          <!-- img container -->
           <div>
-            <img src="https://placehold.co/400" alt="">
+            <img src="https://placehold.co/400" alt="placeholder image" />
           </div>
-          <h2>What's Already in your Closet?</h2>
-        </header>
-        <!-- CTA container -->
+          <!-- MARK: What's Already in your Closet? -->
+      <header aria-labelledby="what's-already-in-your-closet">
+        <h2 id="what's-already-in-your-closet">What's Already in your Closet?</h2>
+      </header>
         <div>
           <p>
-            Before you go out and buy new clothes, take a look at what you already
-            have in your closet. You may be surprised at how many items you can
-            create outfits with.
+            Before you go out and buy new clothes, take a look at what you
+            already have in your closet. You may be surprised at how many items
+            you can create outfits with.
           </p>
-          <!-- CTA link -->
-          <a href="">How to take stock of what you got</a>
-        </div>
-        <!-- <p>
-          Before you go out and buy new clothes, take a look at what you already
-          have in your closet. You may be surprised at how many items you can
-          create outfits with.
-        </p> -->
       </section>
-
       <!-- MARK: How to Thrift Like a Pro -->
-      <header>
-        <h2>How to Thrift Like a Pro</h2>
+      <header aria-labelledby="how-to-thrift-like-a-pro">
+        <h2 id="how-to-thrift-like-a-pro">How to Thrift Like a Pro</h2>
       </header>
       <p>
         There are several tricks to thrifting that can help you find the best
@@ -72,33 +61,19 @@
         <li>Know your body type and what styles flatter you.</li>
         <li>Don't be afraid to mix and match different pieces.</li>
       </ol>
+      <img
+        src="assets/images/fall-fashion-fit-250x314.png"
+        alt="Fall outfit of a woman wearing a white knit outfit with brown accessories"
+        width="250"
+        height="314"
+        srcset="
+          assets/images/fall-fashion-fit-250x314.png  250w,
+          assets/images/fall-fashion-fit-400x502.png  400w,
+          assets/images/fall-fashion-fit-800x1004.png 800w
+        "
+        sizes="(max-width: 400px) 100vw, 400px"
+      />
+      
     </main>
-
-    <!-- LINDGREN comment
-      Why put this content (img+ul) outside the main element? If it's outside the main,
-      what other landmark should it be contained by? Is this an aside? Footer? Or,
-      is it another section of the main?
-
-      Be sure to revise and consider this comment for E3 and the midterm. Remember
-      that you need at least two pages for the midterm too.
-    -->
-    <img
-      src="assets/images/fall-fashion-fit-250x314.png"
-      alt="Fall outfit of a woman wearing a white knit outfit with brown accessories"
-      width="250"
-      height="314"
-      srcset="
-        assets/images/fall-fashion-fit-250x314.png  250w,
-        assets/images/fall-fashion-fit-400x502.png  400w,
-        assets/images/fall-fashion-fit-800x1004.png 800w
-      "
-      sizes="(max-width: 400px) 100vw, 400px"
-    />
-    <ul>
-      <li><a href="">Link 1</a></li>
-      <li>
-        <a href="">Link 2</a>
-      </li>
-    </ul>
   </body>
 </html>
