@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Any particular reason for the GB english usage here? Just curious. :-) -->
 <html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +9,20 @@
   <!-- across both this page and the visual identity page, the skip links will be edited later to also allow for additional skipping to the most important sections. That is just likely going to happen at the end when I can look through the project myself and identify the key aspects upon its compleition. -->
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Primary Navigation">
+
+    <header role="banner">
+      <!-- LINDGREN
+        - Be sure to include an H1 title for the page. You can include that for your final version.
+        - You should also include a label. You can also consider a functional label like "Primary banner for the page" with aria-label
+        -->
+      <p>Meet Suki, your digital companion.</p>
+    </header>
+
+    <!-- LINDGREN
+      - Be sure to create a consistent and repeating nav menu throughout the site.
+        Every page should be represented in the list of links in the same way throughout.
+     -->
+    <nav role="navigation" aria-label="primary navigation">
       <ul>
         <li>
           <a href="visual-identity.html">Visual Identity &amp; Aesthetic</a>
@@ -17,8 +31,8 @@
     </nav>
 
     <main id="main-content" role="main">
-      <header role="banner">
-        <h1>Title of Intro that I haven't thought of yet.</h1>
+      <header>
+        <h2>Title of Intro that I haven't thought of yet.</h2>
         <p>Who is Suki? What does she do and how do I care for her?</p>
       </header>
 
@@ -122,5 +136,8 @@
         </p>
       </section>
     </main>
+    <!-- LINDGREN
+      - Most pages have a footer, so I'd incorporate it later too.
+     -->
   </body>
 </html>
