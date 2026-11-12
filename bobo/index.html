@@ -35,7 +35,15 @@
           />
         </div>
         <div>
-          <h2 id="welcome-heading">Welcome to Making Cents</h2>
+          <!-- LINDGREN:
+            Note how this is nested inside a section inside the main. The main starts with an h2
+            then you use h2 again within this section, despite the relationship.
+
+            In sum, this and any next level headings after the main's h2, should start with an h3.
+            Be sure to update you pages throughout with this feedback in mind.
+          -->
+          <!-- <h2 id="welcome-heading">Welcome to Making Cents</h2> -->
+          <h3 id="welcome-heading">Welcome to Making Cents</h3>
           <p>
             Lorem ipsum sit amet consectetur adipiscing elit. Understanding
             money can help people make informed decisions about spending,
@@ -117,6 +125,7 @@
         </ul>
       </aside>
     </main>
+    <!-- LINDGREN: Rather than repeat "info" and "Information", consider "Site copyright". You can update the label, if the footer offers more information beyond copyright. -->
     <footer role="contentinfo" aria-label="Site Information">
       <p>&copy; 2026 Making Cents. All rights reserved.</p>
       <p>Your guide to understanding and managing money.</p>
