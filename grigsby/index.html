@@ -9,46 +9,69 @@
 <body>
   <a href="#main-content">Skip to main content</a>
 
+  <!-- LINDGREN
+    - Make sure your page's header and nav patterns are consistent across your pages. You'll want to create a consistent familiar design on that first fold, so you don't dirupt the user experience.
+    - Nav:
+  -->
+
   <header role="banner" aria-label="Site Header">
     <h1>Lucy's Literature</h1>
   </header>
-
+  <!-- LINDGREN: Note the indentation for the nav menu here is off by one relationship. Just bump it back one. -->
     <nav aria-label="Main Navigation">
       <ul>
-        <li><a href="2-page.html">About Lucy</a></li>
+        <!-- LINDGREN
+          - Rename the file `2-page.html` as `about.html` -- at least, it seems appropriate. :-)
+          - Note the use of the inbound links to include the index.html part, so you can provide the direct link across all pages on youru site. In other words, make sre your nav's list of links is consistent across pages.
+        -->
+        <li><a href="about.html">About Lucy</a></li>
+        <li><a href="index.html#featured-works">Featured Works</a></li>
+        <li><a href="index.html#favorite-genres">My Favorite Genres</a></li>
+        <li><a href="index.html#contact">Contact Information</a></li>
+        <!-- <li><a href="2-page.html">About Lucy</a></li>
         <li><a href="#featured-works">Featured Works</a></li>
         <li><a href="#favorite-genres">My Favorite Genres</a></li>
-        <li><a href="#contact">Contact Information</a></li>
+        <li><a href="#contact">Contact Information</a></li> -->
       </ul>
     </nav>
   <main id="main-content" aria-label="Main Content">
 
     <section id="about" aria-labelledby="about-heading">
       <h2 id="about-heading">About Lucy</h2>
+      <!-- LINDGREN: Tiny bump to your indentation to make the relationships more perceivable. -->
       <img
-      src="assets/images/lucy-grigsby-author-portrait-800x600.jpg"
-      alt="Portrait of Lucy Grigsby in a train with a mountain landscape in the background"
-      width="800"
-      height="600"
-      srcset="
-        assets/images/lucy-grigsby-author-portrait-400x300.jpg 400w,
-        assets/images/lucy-grigsby-author-portrait-800x600.jpg 800w,
-        assets/images/lucy-grigsby-author-portrait-1200x900.jpg 1200w
-      "
-      sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1200px"
+        src="assets/images/lucy-grigsby-author-portrait-800x600.jpg"
+        alt="Portrait of Lucy Grigsby in a train with a mountain landscape in the background"
+        width="800"
+        height="600"
+        srcset="
+          assets/images/lucy-grigsby-author-portrait-400x300.jpg 400w,
+          assets/images/lucy-grigsby-author-portrait-800x600.jpg 800w,
+          assets/images/lucy-grigsby-author-portrait-1200x900.jpg 1200w
+        "
+        sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1200px"
       >
-      <p>Lucy Grigsby is a passionate writer and literature enthusiast. She has been writing for over a decade, exploring various genres and styles. Her work often delves into the complexities of human emotions and relationships, offering readers a unique perspective on life.</p>
+      <!-- LINDGREN: Small indentation suggestion for paragraphs, so you can close up the content later. -->
+      <p>
+        Lucy Grigsby is a passionate writer and literature enthusiast. She has been writing for over a decade, exploring various genres and styles. Her work often delves into the complexities of human emotions and relationships, offering readers a unique perspective on life.
+      </p>
+      <!-- <p>Lucy Grigsby is a passionate writer and literature enthusiast. She has been writing for over a decade, exploring various genres and styles. Her work often delves into the complexities of human emotions and relationships, offering readers a unique perspective on life.</p> -->
     </section>
 
     <section id="featured-works" aria-labelledby="featured-works-heading">
       <h2 id="featured-works-heading">Featured Works</h2>
 
+      <!-- LINDGREN: Again, more of a suggestion to create indentation for longer content. But, again, just a suggestion. -->
       <ul>
-        <li><strong>The Whispering Shadows</strong> - A gripping tale of mystery and suspense that keeps readers on the edge of their seats.</li>
-
-        <li><strong>Echoes of the Heart</strong> - A heartfelt exploration of love, loss, and the enduring power of human connection.</li>
-
-        <li><strong>Through the Looking Glass</strong> - A whimsical journey into a fantastical world where reality and imagination intertwine.</li>
+        <li>
+          <strong>The Whispering Shadows</strong> - A gripping tale of mystery and suspense that keeps readers on the edge of their seats.
+        </li>
+        <li>
+          <strong>Echoes of the Heart</strong> - A heartfelt exploration of love, loss, and the enduring power of human connection.
+        </li>
+        <li>
+          <strong>Through the Looking Glass</strong> - A whimsical journey into a fantastical world where reality and imagination intertwine.
+        </li>
       </ul>
     </section>
 
