@@ -6,25 +6,32 @@
     <title>Adra's Closet</title>
   </head>
   <body>
-    <!-- MARK: Basics that Everyone Should Have in their Wardrobe -->
+    <!-- LINDGREN: Missing skip link -->
     <header>
       <h1>Adra's Closet</h1>
     </header>
+    <!-- LINDGREN
+      - Note how your indenation work gets off kilter after the opening <nav> tag. Be sure to resolve any indentation issues throughout your site. Ask: "What's inside of what?""
+    -->
     <nav role="navigation" aria-label="Main Navigation">
     <ul>
-      <li><a href="something.html">The Gallery</a></li>
+      <!-- LINDGREN: I hope it's clear that your filenames should be much more semantically appropriate. :-) -->
+      <li><a href="gallery.html">The Gallery</a></li>
+      <!-- <li><a href="something.html">The Gallery</a></li> -->
     </ul>
   </nav>
-   <main role="main" id="main" aria-label="basics that everyone should have in their wardrobe"> 
-    <section>
-      <header aria-labelledby="wardrobe-basics">
-        <h2 id="wardrobe-basics">Basics that Everyone Should Have in their Wardrobe </h2>
+   <main role="main" id="main" aria-label="basics that everyone should have in their wardrobe">
+    <!-- LINDGREN
+      - Remember that landmark / sectioning elements should help create an easily perceivable method to quickly understand the bi landmark topics of a page -- kinda like skimming a page for us visually-abled folks, right? That said, you create a landmark role for a header instead of the entire section as a role="region". I've updated the first section as a guide for revision for the other sections.
+      - Sidenote: I also resolved some indentation issues within the section, but the section itself is still not represented appropriately overall, since the body's children elements are off kilter.
+    -->
+    <section role="region" aria-labelledby="wardrobe-basics">
+      <header>
+        <h2 id="wardrobe-basics">Basics that Everyone Should Have in their Wardrobe</h2>
       </header>
-        <p>
-         In an age where fast fashion is a consistent thorn in true style's side,
-         it's important to create a wardrobe that is both sustainable and
-         timeless.
-        </p>
+      <p>
+        In an age where fast fashion is a consistent thorn in true style's side, it's important to create a wardrobe that is both sustainable and timeless.
+      </p>
       <ol>
         <li>A basic white tee</li>
         <li>A pair of dark wash jeans</li>
@@ -48,6 +55,8 @@
             you can create outfits with.
           </p>
       </section>
+
+      <!-- LINDGREN: Why is this outside of a section? Any particular reason why you would change your HTML pattern and relationships? Consider how all of these elements are now associated as being part of the main element more directly now, instead of related to a particular section of the main. That structuring means something, and will impact a11y in subtle ways. -->
       <!-- MARK: How to Thrift Like a Pro -->
       <header aria-labelledby="how-to-thrift-like-a-pro">
         <h2 id="how-to-thrift-like-a-pro">How to Thrift Like a Pro</h2>
@@ -64,8 +73,7 @@
       <img
         src="assets/images/fall-fashion-fit-250x314.png"
         alt="Fall outfit of a woman wearing a white knit outfit with brown accessories"
-        width="250"
-        height="314"
+        width="250" height="314"
         srcset="
           assets/images/fall-fashion-fit-250x314.png  250w,
           assets/images/fall-fashion-fit-400x502.png  400w,
@@ -74,10 +82,16 @@
         sizes="(max-width: 400px) 100vw, 400px"
       />
     </main>
+    <!-- LINDGREN: All content should be contained by the body -->
+    <footer>
+      <p>
+        Copyright © 2026 Adra's Closet. All Rights Reserved.
+      </p>
+    </footer>
   </body>
-  <footer>
+  <!-- <footer>
     <p>
       Copyright © 2026 Adra's Closet. All Rights Reserved.
     </p>
-  </footer>
+  </footer> -->
 </html>
