@@ -68,6 +68,15 @@
   </head>
 
   <body>
+    <!-- LINDGREN: Missing skip link. Make sure to provide throughout. It should always be the first element within the body and skip to the main content. See my slides for  a review of all of the necessary a11y techniques. -->
+
+    <!-- LINDGREN - Overall Comments
+      - A11Y ROLES & LABELS: Even though newer browsers may translate HTML5 elements like header, section, main, etc. into their role names in an A11Y document tree for screen reader tech, some older browsers do not. So, you need to add explicit role="" attributes to your landmark elements. Do so throughout. Also, your footer needs a label.
+      - INDENTATION & SPACING: Make sure to clean up your HTML's indentation and spacing. Your HTML indentation must represent the structural relationships, so ask yourself: "What's inside of what?" to help you revise throughout your site. Same with spacing, since it's inconsistent. Sometimes you add more space between elements, other times you don't.
+      - CODE ERRORS: You have at least one code error, which your code editor will indicate with a slightly different syntax color than normal. Wherever that occurs, review the line above or element just before it in the HTML to see what's wrong. Right now, check out the first list item in the main navigation.
+      - ALT TEXT: Note how all of your alt text descriptions start with "Image of..." or some variation. Since it's an image element, that's assumed information. Instead, consider what information is important for visually-impaired people. For example, once you insert a headshot of yourself, how would you like to present yourself descriptively to those users? In the same vein as you are presenting yourself visually to accomplish an aim for visually-abled people, you should consider the alt text a place to accomplish this aim through your description. Be sure to update your alt text throughout with this in mind.
+      - CONTENT: Even though I did not expect much actual content yet, you should at least have provided some more use of placeholder content with both text (lorem ipsum) and images (placehold.co). As is, there's not much on the home page, and the other pages do not signpost any particular design plan. You technically only have one more complete page here on the home. Consequently, you do not have much content to test for accessibility because of it.
+    -->
     <header class="site-header" aria-labelledby="site-title">
       <div class="title-container">
         <img src="assets/images/animated_birds_banner.png" aria-label="flappy-birds" class="moving-banner" width="150" height="150">
@@ -108,6 +117,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus adipisci d
         </div>
       </section>
       
+      <!-- LINDGREN: Note this misaplication of labelledby. Be sure to revise with an ID on the h2 -->
       <aside class="sidebar" aria-labelledby="Sidebar with quick links">
         <h2>Quick Links</h2>
         <ul>
