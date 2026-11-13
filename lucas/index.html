@@ -8,12 +8,21 @@
 <body> 
     <a href="#main-content">Skip to main content</a>
     <header role="banner">
+        <!-- LINDGREN
+          Here's a suggested revision for your image. The sizes attribute wasn't really doing much there, and we will learn how to manage images with CSS.
+        -->
         <img src="assets/images/romance-index-books-flowers-800x320.jpg"
+            srcset="assets/images/romance-index-books-flowers-400x160.jpg 400w,
+                    assets/images/romance-index-books-flowers-800x320.jpg 800w,
+                    assets/images/romance-index-books-flowers-1200x480.jpg 1200w"
+            width="800" height="320"
+            alt="Romance Books and Flowers">
+        <!-- <img src="assets/images/romance-index-books-flowers-800x320.jpg"
             srcset="assets/images/romance-index-books-flowers-400x160.jpg 400w, assets/images/romance-index-books-flowers-800x320.jpg 800w, assets/images/romance-index-books-flowers-1200x480.jpg 1200w"
             sizes="100vw"
             width="800"
             height="320" 
-            alt="Romance Books and Flowers">
+            alt="Romance Books and Flowers"> -->
         <h1>The Romance Index</h1>
         <nav role="navigation" aria-label="Main Navigation">
             <ul>
@@ -22,11 +31,27 @@
             </ul>
         </nav>
     </header>
+    <!-- LINDGREN:
+      Note the different color of syntax on the line after the main element.
+
+      That means there's an error there. If you check that line with the main element, you'll see how the aria-label value's syntax isn't complete--it's missing the closing double-quote character.
+    -->
     <main role="main" id="main-content" aria-label="Romance Index Home>
         <section role="region" aria-labelledby="find-next-read">
             <h2 id="find-next-read">Find Your Next Love Story</h2>
             <p>Because sometimes “I want a romance” isn't specific enough. Find your next read by the tropes you can't resist.</p>
         </section>
+        <!-- LINDGREN
+          This <section> feels more like a secondary navigation <nav>. So, consider changing this section to a nav and updating the role and label.
+
+          Also, you could use IDs on the sections on the tropes.html page to create direct inbound links. For example, for "Slow Burn" in tropes.html, you could use the existing "slow-burn" ID value on the h2, to use as a link in the list item as follows:
+
+            <li>
+              <a href="tropes.html#slow-burn">Slow Burn</a>
+            </li>
+
+          This will link directly to that targeted section/position on the tropes.html page. Rinse and repeat for all other subsections.
+        -->
         <section role="region" aria-labelledby="browse-tropes">
             <h2 id="browse-tropes">Browse by Trope</h2>
             <ul>
