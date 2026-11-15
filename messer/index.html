@@ -6,9 +6,20 @@
   <title>Document</title>
 </head>
 <body>
-  <section> 
+  <!-- LINDGREN:
+    - A11Y Work: Lots of missing a11y techniques throughout. Be sure you've implemented all of the A11y techniques throughout your two pages.
+      - Missing skip link throughout.
+      - Roles and labels missing, such as the main and sections of the main. Make sur eto explicitly define roles too, because some older browsers do not autoatically translate landmark elements to their semantic role. In other words, if it's a section, then define a role of role="region"; if it's the main, then define a role="main"; etc.
+  -->
+
+  <!-- LINDGREN: Note how this section isn't necessary as a landmark, since this is a header for the page, not the section of the page. See how structural relationships impact meaning? Make sure that your HTML structure accounts for these relational meanings throughout. -->
+  <!-- <section>  -->
     <header role="banner" aria-labelledby="page-title">
       <h1 id="page-title">Blank Pages.</h1>
+    <!-- LINDGREN:
+      - Double check all of your indetnation work throughout. What's inside of it? This is something I assess closely.
+      - Also, make sure to implement more srcset work across your site for the final. You should definitely include more than one image that does so.
+    -->
     <img src="open_book_blank_pages_640x427.jpg"
             srcset="images/open_book_blank_pages_640x427.jpg 640w,
                  images/open_book_blank_pages_1920x1280.jpg 1920w,
@@ -17,7 +28,7 @@
             alt= "" 
             width="1920" height="1280">
     </header>
-  </section> 
+  <!-- </section>  -->
   <main>
     <section aria-labelledby="Website-Mission-Heading">
       <h2 id="Website-Mission-Heading">Website Mission</h2>
@@ -54,5 +65,6 @@
       </p>
     </section>
   </main>
+  <!-- LINDGREN: Most sires have a footer, even if simply for the licensing and credits. -->
 </body>
 </html>
