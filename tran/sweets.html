@@ -1,50 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-        body {
-            text-align: center;
-        }
-    </style>
+  <!-- LINDGREN: Again, removed inline styles; should only be in CSS files -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sugar Surplus</title>
 </head>
 <body>
-  <style>
-        body {
-            background-color: lightblue;
-        }
-    </style>
-<h1> More of Our Sweets </h1>
+  <!-- LINDGREN: Skip link goes first always, since it helps users skip right away. -->
+  <a href="#main-content" aria-label="Skip to the main content section">Skip to Main Content</a>
+  <!-- LINDGREN: Again, removed style tag; should only be in CSS files -->
+
+  <!-- LINDGREN: Made lots of edits below to account for indentation, how the h1 should not be orphaned, when the header is a header of the page, as well as indentation work. -->
+<!-- <h1> More of Our Sweets </h1> -->
   <header>
-  <a href="#main-content" aria-label="Skip to the main content section">
-    Skip to Main Content
-  </a>
-
-  <br><br>
-
-  <nav aria-label="Main navigation">
-    <a href="about.html" aria-label="Learn more about our candy store">
-      About
-    </a>
-
-      <br><br> 
-
-    <a href="allergens.html" aria-label="Information for customers with allergies">
-      Allergies
-    </a>
-
-      <br><br> 
-
-    <a href="sweets.html" aria-label="Browse our sweets">
-      Sweets
-    </a>
-
-    <br><br>
-
-  </nav>
-</header>
+    <h1> More of Our Sweets </h1>
+    <!-- <a href="#main-content" aria-label="Skip to the main content section">Skip to Main Content</a> -->
+    <nav aria-label="Main navigation">
+      <a href="about.html">About</a>
+      <a href="allergens.html">Allergies</a>
+      <a href="sweets.html" aria-label="Browse our sweets">Sweets</a>
+    </nav>
+  </header>
   <main id="main-content" aria-label="Main content">
     <h1> Candy Descriptions</h1>
           <div> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, quos itaque perferendis minima nulla delectus architecto quis maiores voluptatem nobis sed dolore laudantium aliquam ipsa fugiat sapiente iure consectetur quo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quae, excepturi minus quisquam modi deserunt velit sequi sed ipsam rem molestias saepe laudantium doloribus dolorum mollitia sint minima nobis laboriosam. </div>
