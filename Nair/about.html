@@ -8,10 +8,10 @@
   </head>
 
   <body>
-    <!-- Header Landmark -->
+    <a href="#main-content">Skip to main content</a>
 
-    <header>
-      <h1>About Us</h1>
+    <header role="banner" aria-label="Site header">
+      <h1 id="page-title">About Us</h1>
 
       <nav aria-label="Main Navigation">
         <ul>
@@ -24,16 +24,46 @@
       </nav>
     </header>
 
-    <!-- Main Landmark -->
+    <main id="main-content" role="main" aria-labelledby="page-title">
+      <section aria-labelledby="about-brand-heading">
+        <h2 id="about-brand-heading">About LaLaLa's Designer Clothing</h2>
 
-    <main>
-      <section aria-label="About LaLaLa's Designer Clothing">
-        <h2>About LaLaLa's Designer Clothing</h2>
+        <p>
+          LaLaLa's Designer Clothing is designed around the idea that clothing
+          can be more personal, creative, and expressive. Our goal is to give
+          customers more control over what they wear by making customization a
+          central part of the shopping experience.
+        </p>
+      </section>
 
-        <div>
-          <p>Learn more about LaLaLa's Designer Clothing.</p>
-        </div>
+      <section aria-labelledby="audience-heading">
+        <h2 id="audience-heading">Who We Serve</h2>
+
+        <p>
+          Our website is intended for fashion-conscious shoppers, people looking
+          for personalized clothing, gift shoppers, small businesses ordering
+          apparel, and customers who value convenient online customization.
+        </p>
+      </section>
+
+      <section aria-labelledby="why-custom-heading">
+        <h2 id="why-custom-heading">Why Custom Clothing?</h2>
+
+        <p>
+          Finding clothing that matches your exact preferences can be difficult.
+          Customization gives shoppers more opportunities to explore colors,
+          designs, sizes, and styles that feel more personal.
+        </p>
+
+        <p>
+          Customers can submit their design ideas and preferences to create
+          personalized clothing that meets their unique needs.
+        </p>
       </section>
     </main>
+
+    <footer role="contentinfo" aria-label="Site footer">
+      <p>LaLaLa's Designer Clothing</p>
+    </footer>
   </body>
 </html>
