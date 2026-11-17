@@ -6,40 +6,114 @@
     <title>Collaborative Cakes</title>
   </head>
   <body>
-    <header>
-      <h1>Collaborative Cakes!</h1>
+    <!-- LINDGREN: Need a skip link here to the main content -->
+
+    <!-- LINDGREN: Suggested position for a nav menu to use throughout the site consistently. You will need to complete it yourself however for the final. But, it should be complete and consistently include the same list of links and be in the same position throughout the site. -->
+    <nav>
+      <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </nav>
+
+    <!-- LINDGREN:
+      - Suggested change: Note how breaking up that longer paragraph content helps provide a guided process through the content and into the potentially new landing page structure for some main content that introduces folks to the other pages.
+      - Also, the hgroup element is a suggested way to group a heading with a paragraph tag as its subtitle. I provided some potential class names to consider using later.
+    -->
+    <header role="banner" aria-label="Home page banner for Collaborative Cakes">
+      <hgroup class="page_heading_group__container">
+        <h1>Collaborative Cakes!</h1>
+        <p>
+          <!-- LINDGREN: This span will offer you control to isolate that span of text and potentially style it different than the non markedup text to produce an isolation effect. -->
+          <span>Welcome to Collaborative Cakes!</span> A website dedicated to creating desserts made by humans.
+        </p>
+      </hgroup>
+      <!-- LINDGREN: Note this orphaned main closing tag. Be sure to delete it. -->
+    <!-- </main> -->
+    </header>
+
+    <!-- LINDGREN
+      Ok, note my suggested change to the home, because you need a consistent navigation (see the top addition), but you can also use the home page like a landing overview. Accordingly, I created a main with potetial content preview areas. Change the HTML content pattern however you like/need later.
+
+      The main issue before was that you were using disconnected headers and numerous navs, and you shouldn't use sectioning landmarks so frequently, because it will confuse visually impaired users with all of the landmarks with like one bit of content in each.
+
+      Plus, nav menus should also be used sparingly, right? Would you look on a website for multiple navigation menus as a visually-abled user? Nope. You tyipcally have 1, maybe 2, options.
+
+      LMK if you want to review this feedback with me.
+    -->
+    <main>
+      <div>
+        <img src="" alt="">
+        <h2>What's on the Menu?</h2>
+        <p>
+          Look through the cake recipes on our <a href="menu.html">Menu</a> for step by step instructions on how to make your chosen dessert.
+        </p>
+      </div>
+      <div>
+        <img src="" alt="">
+        <h2>Connect with other bakers!</h2>
+        <p>
+          Comment any changes you made to some desserts in our <a href="blog.html">Blog</a> and make connections with other bakers.
+        </p>
+      </div>
+      <div>
+        <img src="" alt="">
+        <h2>Collaborate with us!</h2>
+        <p>
+          Want to make your own cake but dont know where to start? Lets <a href="collab.html">Collab</a>! Describe your vision to us and we'll help make it come to life.
+        </p>
+      </div>
+    </main>
+    <!-- LINDGREN: Consider adding a footer across the site -->
+
+    <!-- <section role="region" aria-labelledby="welcome">
+    <p>
+      Welcome to Collaborative Cakes! A website dedicated to creating desserts
+      made by humans. Look through the cake recipes on our Menu for step by step
+      instructions on how to make your chosen dessert. Comment any changes you
+      made to some desserts in our Blog and make connections with other bakers.
+      Want to make your own cake but dont know where to start? Lets Collab!
+      Describe your vision to us and we'll help make it come to life.
+    </p>
+    </section> -->
+    <!-- <header>
+      <header role="banner" aria-labelledby="Menu">
+      <h2>Menu</h2>
+      </main>
     </header>
     <nav>
       <ul>
         <li>
-          <a href="menu/index.html">Menu</a>
+          <a href="menu.html"> Menu</a>
         </li>
       </ul>
     </nav>
-
-    <main>
-      <section>
-        <article>
-          <div>
-            <img
-              src="../images/shortcake-slice.jpg"
-              width="400"
-              height="300"
-              alt="Strawberry Shortcake Cheesecake"
-            />
-          </div>
-          <div>
-            <h2>Cheesecake</h2>
-            <p>
-              lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <a href="cheesecake.html">CTA Here</a>
-          </div>
-        </article>
-      </section>
-    </main>
+    <header>
+      <header role="banner" aria-label="Blog">
+      <h2>Blog</h2>
+      </main>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="blog.html" aria-label="Link to Blog">Blog</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <header role="banner" aria-label="Lets Collab">
+      <h2>Lets Collab!</h2>
+      </main>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="collab.html" aria-label="Link to Lets Collab page">Lets Collab</a>
+        </li>
+      </ul>
+    </nav>
+    </main> -->
   </body>
 </html>
