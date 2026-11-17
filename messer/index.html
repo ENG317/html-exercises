@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- LINDGREN:
+    - A11Y Work: Lots of missing a11y techniques throughout. Be sure you've implemented all of the A11y techniques throughout your two pages.
+      - Missing skip link throughout.
+      - Roles and labels missing, such as the main and sections of the main. Make sur eto explicitly define roles too, because some older browsers do not autoatically translate landmark elements to their semantic role. In other words, if it's a section, then define a role of role="region"; if it's the main, then define a role="main"; etc.
+  -->
+
+  <!-- LINDGREN: Note how this section isn't necessary as a landmark, since this is a header for the page, not the section of the page. See how structural relationships impact meaning? Make sure that your HTML structure accounts for these relational meanings throughout. -->
+  <!-- <section>  -->
+    <header role="banner" aria-labelledby="page-title">
+      <h1 id="page-title">Blank Pages.</h1>
+    <!-- LINDGREN:
+      - Double check all of your indetnation work throughout. What's inside of it? This is something I assess closely.
+      - Also, make sure to implement more srcset work across your site for the final. You should definitely include more than one image that does so.
+    -->
+    <img src="open_book_blank_pages_640x427.jpg"
+            srcset="images/open_book_blank_pages_640x427.jpg 640w,
+                 images/open_book_blank_pages_1920x1280.jpg 1920w,
+                 images/open_book_blank_pages_2400x1600.jpg 2400w"
+            sizes="(max-width: 700px) 100vw, 700px"
+            alt= "" 
+            width="1920" height="1280">
+    </header>
+  <!-- </section>  -->
+  <main>
+    <section aria-labelledby="Website-Mission-Heading">
+      <h2 id="Website-Mission-Heading">Website Mission</h2>
+      <p>
+        The purpose of this website is to expose young adult readers and writers to contemporary and classic works of fiction writing. Through my reviews and book descriptions, I hope to inspire young adult readers to give reading the story a shot themselves and join in on the timeless discussions surrounding each piece!
+      </p>
+    </section>
+     <nav role="navigation" aria-label="Primary Directory">
+      <h2>Find a Review</h2>
+      <p>
+        Locate reviewed books by title of author.
+      </p>
+        <ul>
+          <li><a href="second_page.html">Second Page</a></li>
+          <li><a href="">A-Z Authors and Titles.</a></li>
+        </ul>
+    </nav>
+    <section aria-labelledby="Book-and-Author-of-the-Month">
+      <h2 id="Book-and-Author-of-the-Month">Book and Author of the Month</h2>
+      <p>
+        The book of the month is The Great Gatsby by F. Scott Fitzgerald.
+      </p>
+      <p>
+        F. Scott Fitzgerald (September 24, 1896 - December 21, 1940), was an American novelist known for his portrayal of the Jazz Age and the decadence of the wealthy elite. His most famous work, The Great Gatsby, is considered one of the greatest American novels of the 20th century.
+      </p>
+    </section>
+     <section aria-labelledby="Book-and-Author-of-Last-Month">
+      <h2 id="Book-and-Author-of-Last-Month">Book and Author of Last Month</h2>
+      <p>
+        The book of last month is A Farewell to Arms by Ernest Hemingway.
+      </p>
+      <p>
+        Ernest Hemingway (July 21, 1899 - July 2, 1961), was a Nobel and Pulitzer prize winning author known for writing a variety of fiction novels, short stories, and non-fiction titles. Notably, he served in the Red Cross and as an ambulance driver during World War I, and spent much of his professional life as a journalist/reporter. His familiarity and close proximity to war and foreign conflict is often highlighted throughout his work.
+      </p>
+    </section>
+  </main>
+  <!-- LINDGREN: Most sires have a footer, even if simply for the licensing and credits. -->
+</body>
+</html>
