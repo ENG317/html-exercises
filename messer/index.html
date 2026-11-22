@@ -6,20 +6,22 @@
   <title>Document</title>
 </head>
 <body>
-  <section> 
-    <header role="banner" aria-labelledby="page-title">
-      <h1 id="page-title">Blank Pages.</h1>
-    <img src="open_book_blank_pages_640x427.jpg"
-            srcset="images/open_book_blank_pages_640x427.jpg 640w,
-                 images/open_book_blank_pages_1920x1280.jpg 1920w,
-                 images/open_book_blank_pages_2400x1600.jpg 2400w"
-            sizes="(max-width: 700px) 100vw, 700px"
-            alt= "" 
-            width="1920" height="1280">
-    </header>
-  </section> 
+
+  <!-- <section> -->
+  <header role="banner" aria-labelledby="page-title">
+    <!-- LINDGREN: Blank pages? -->
+    <h1 id="page-title">Blank Pages.</h1>
+  <img src="open_book_blank_pages_640x427.jpg"
+          srcset="images/open_book_blank_pages_640x427.jpg 640w,
+                images/open_book_blank_pages_1920x1280.jpg 1920w,
+                images/open_book_blank_pages_2400x1600.jpg 2400w"
+          sizes="(max-width: 700px) 100vw, 700px"
+          alt= ""
+          width="1920" height="1280">
+  </header>
+  <!-- </section> -->
   <main>
-   <!-- MISSION (use comments as headings in your code) -->
+    <!-- MISSION -->
     <section aria-labelledby="Website-Mission-Heading">
       <h2 id="Website-Mission-Heading">Website Mission</h2>
       <p>
@@ -27,26 +29,7 @@
       </p>
     </section>
 
-    <!-- LINDGREN COMMENT
-      I'll add this suggestion, but you wouldn't want to have a nav inside a nav in this case. That's a little tricky. Now that I think I understand your design goals here, I'd consider this pattern, where you wrap it all in a nav, then remove the nested nav menu.
-
-      I also wonder if "Author Directory" makes more sense as a label. IF so, maybe consider updating the heading too and converting it to a aria-labelledby.
-
-      You also forgot to update the closing tag for the `nav`.
-
-      <nav role="navigation" aria-label="Primary Directory">
-        <h2>Find a Review</h2>
-        <p>
-          Locate reviewed books by title of author.
-        </p>
-        <nav aria-label="Directory">
-          <ul>
-            <li><a href="">A-Z Titles.</a></li>
-            <li><a href="">A-Z Authors.</a></li>
-          </ul>
-        </nav>
-      </section>
-    -->
+    <!-- DIRECTORY -->
     <nav role="navigation" aria-label="Author Reviews Directory">
       <h2>Find a Review</h2>
       <p>
@@ -58,6 +41,7 @@
       </ul>
     </nav>
 
+    <!-- BOOK OF MONTH -->
     <section aria-labelledby="Book-and-Author-of-the-Month">
       <h2 id="Book-and-Author-of-the-Month">Book and Author of the Month</h2>
       <p>
@@ -68,5 +52,6 @@
       </p>
     </section>
   </main>
+  <!-- LINDGREN: Most site's include a footer, even if it's just for licensing and credits. -->
 </body>
 </html>
