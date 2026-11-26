@@ -8,8 +8,18 @@
   <body>
     <a href="#main" class="skip-link">Skip to main content</a>
     <header role="banner" aria-labelledby="page-title">
-      <h1 id="page-title">Jenny Browne for Congress</h1>
-      <h2>Fighting for a better future for all</h2>
+      <!-- LINDGREN
+        Here's a more advanced pattern to consider with the hgroup element.
+
+        It helps you group a heading with a subtitle like the provided example.
+        I also added a class to potentially use later.
+      -->
+      <!-- <h1 id="page-title">Jenny Browne for Congress</h1>
+      <h2>Fighting for a better future for all</h2> -->
+      <hgroup>
+        <h1 id="page-title">Jenny Browne for Congress</h1>
+        <p class="subtitle">Fighting for a better future for all</p>
+      </hgroup>
     </header>
     <nav role="navigation" aria-label="main navigation">
       <ul>
@@ -31,6 +41,24 @@
           and policy-making, she is committed to representing the voices of her
           constituents and working towards a brighter future for all.
         </p>
+        <!-- LINDGREN:
+          Note how all of your alt text descriptions start with "Image of..." or some variation.
+
+          Since it's an image element, that's assumed information. Instead, consider what information
+          is important for visually-impaired people.
+
+          For example, once you insert a headshot of yourself, how would you like to present yourself
+          descriptively to those users? In the same vein as you are presenting yourself visually to
+          accomplish an aim for visually-abled people, you should consider the alt text a place to
+          accomplish this aim through your description.
+
+          Be sure to update your alt text throughout with this in mind.
+
+          Additionally, I would have liked you to apply the srcset to an actual local file, rather than
+          a placehold hotlink. For the final, please provide at least 2 local files with srcset. Honestly,
+          You should use them for any image with potential high and low res needs to improve your page performance,
+          but I appreciate the image work that you have been doing throughout these 3 pages. Well done!
+        -->
         <img
           srcset="
             https://placehold.co/600x400 600w,
@@ -48,7 +76,7 @@
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <img
-          src="images/image-of-congress.jpeg"
+          src="assets/images/image-of-congress.jpeg"
           alt="image of capitol hill"
           width="200"
           height="250"
@@ -63,7 +91,7 @@
           ipsa iste ducimus?
         </p>
         <img
-          src="images/endorsed-by.png"
+          src="assets/images/endorsed-by.png"
           alt="image of hands shaking in support"
           width="300"
           height="200"
@@ -76,7 +104,7 @@
           eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem
         </p>
         <img
-          src="images/volunteering.jpeg"
+          src="assets/images/volunteering.jpeg"
           alt="image of banner held by volunteers"
           width="300"
           height="200"
@@ -90,7 +118,7 @@
           ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
         </p>
         <img
-          src="images/jenny-browne-for-congress.png"
+          src="assets/images/jenny-browne-for-congress.png"
           alt="image of Jenny Browne for Congress logo"
           width="200"
           height="200"
@@ -104,12 +132,13 @@
           ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
         </p>
         <img
-          src="images/check-writing.png"
+          src="assets/images/check-writing.png"
           alt="image of check being filled out"
           width="300"
           height="200"
         />
       </section>
     </main>
+    <!-- LINDGREN: I'd add a footer to your site's pages. That's pretty common, even if it's a little space for copyright and other site information. -->
   </body>
 </html>
