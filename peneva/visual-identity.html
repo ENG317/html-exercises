@@ -7,14 +7,33 @@
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
+<<<<<<< Updated upstream
     <nav role="navigation" aria-label="Primary Navigation">
+=======
+
+    <header id="banner" aria-labelledby="primary-heading">
+      <h1 id="primary-heading">The Nerdy Stuff </h1>
+      <p>
+        A look at how Suki was built, why she exists, and
+        where she's headed next.
+      </p>
+    </header>
+
+    <nav aria-label="Primary navigation">
+>>>>>>> Stashed changes
       <ul>
         <li>
-          <a href="index.html">Technical Overview</a>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="visual-identity.html"
+            >The Nerdy Stuff</a
+          >
         </li>
       </ul>
     </nav>
 
+<<<<<<< Updated upstream
     <main id="main-content" role="main">
       <header role="banner">
         <h1>Welcome to the More Technical Details!</h1>
@@ -25,76 +44,93 @@
         </p>
       </header>
 
+=======
+    <main id="main-content">
+>>>>>>> Stashed changes
       <!-- How Was Suki Created? -->
       <section aria-labelledby="how-was-suki-created">
         <h2 id="how-was-suki-created">How Was Suki Created?</h2>
+        <p>
+          Suki is built intentionally, with foundational web technologies she runs smoothly without heavy frameworks or data
+          tracking:
+        </p>
         <ol>
           <li>
-            HTML: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem incidunt commodi soluta?
+            <strong>HTML:</strong> Structured with semantic elements and ARIA
+            landmarks to keep the page accessible to screen readers and keyboard
+            navigation.
           </li>
           <li>
-            CSS: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem incidunt commodi soluta?
+            <strong>CSS:</strong> Styled with transitions, custom
+            properties, and ambient animations to create Suki's
+            breathing glow states without harsh visual jumps.
           </li>
-        </ol>
       </section>
 
       <!-- How Does Suki Help Users -->
       <section aria-labelledby="how-does-suki-helps-users">
         <h2 id="how-does-suki-helps-users">How Does Suki Help Users?</h2>
         <p>
-          Suki provides a visually soothing companion that helps users destress
-          by offering gentle color shifts, soft glow behaviors, and a calm
-          atmosphere. She encourages users to slow down and engage with
-          technology in a more intentional way, reducing overstimulation and
-          digital fatigue. The glow, color palette, and movement patterns create
-          a sense of visual grounding that helps users feel centered; Suki acts
-          as a quiet, non-demanding being that provides comfort without
-          requiring constant interaction.
+          Modern interfaces are often engineered to capture attention through urgency. Suki is designed to do the opposite. By offering gentle colour shifts, slow glow rhythms, and a quiet atmosphere, she encourages you to slow down and engage with your screen more intentionally.
+        </p>
+        <p>
+          Her movement and light patterns act as a visual anchor to reduce digital fatigue by giving you a calm, non-demanding presence on your screen.
         </p>
       </section>
 
       <!-- Creator Info -->
       <section aria-labelledby="creator-info">
-        <h2 id="creator-info">Creator Info!</h2>
+        <h2 id="creator-info">Creator Info</h2>
         <p>
-          Suki was created by me, Deni, a 20 year old English major at NC State
-          with a growing unhappiness of the state of technology. I want to see
-          more creative, low-stakes technology that also considers the
-          overstimulation current technology causes. I was deeply inspired by
-          Creature's STARBOY, and I owe this project to their innovative
-          approach. If you have any questions or feedback, feel free to reach
-          out on GitHub!
+          Suki was created by me, Deni—a 20-year-old English major at NC State
+          with a growing frustration toward the noisy state of modern
+          technology. I want to see more creative, low-stakes software that
+          respects human attention and actively works against overstimulation.
         </p>
-        <img
+        <p>
+          This project owes its heart to Creature Co's STARBOY and their
+          thoughtful approach to personal tech. If you have questions, ideas, or
+          feedback, feel free to reach out on GitHub!
+        </p>
+        <figure>
+          <img
             src="assets/images/suki-creator-cliff-medium-300x304.jpg"
-            alt="the creator of Suki standing on a black cliff in front of an ocean"
+            alt="Deni, the creator of Suki, standing on a dark rocky cliff overlooking the ocean"
             width="300"
             height="304"
             srcset="
-            assets/images/suki-creator-cliff-small-150x152.jpg      150w,
-            assets/images/suki-creator-cliff-medium-300x304.jpg     300w,
-            assets/images/suki-creator-cliff-large-600x608.jpg      600w,
-            assets/images/suki-creator-cliff-optimal-1000x1013.jpg 1000w
-          "
+              assets/images/suki-creator-cliff-small-150x152.jpg      150w,
+              assets/images/suki-creator-cliff-medium-300x304.jpg     300w,
+              assets/images/suki-creator-cliff-large-600x608.jpg      600w,
+              assets/images/suki-creator-cliff-optimal-1000x1013.jpg 1000w
+            "
             sizes="(max-width: 600px) 100vw, 50vw"
-        />
+          />
+          <figcaption>Deni, creator of Suki.</figcaption>
+        </figure>
       </section>
 
       <!-- What's Next for Suki -->
       <section aria-labelledby="whats-next-for-suki">
         <h2 id="whats-next-for-suki">What's Next for Suki?</h2>
         <p>
-          Extra stuff that will be added at the end with things i failed to do.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem incidunt commodi soluta? The code for Suki is available
-          on GitHub, and free to use. If you have anything you want to add or
-          improve, feel free to contribute! As long as you stay true to the core
-          vision of Suki, she will continue to evolve and provide a calming
-          presence in the digital world.
+          As a solo student project, there are plenty of features still on my
+          wish list—such as saving Suki's mood locally between visits, adding
+          optional ambient soundscapes, and refining her sparkle animations.
+        </p>
+        <p>
+          The source code for Suki is open and available on GitHub. If you want
+          to build upon her or suggest improvements, contributions are always
+          welcome—as long as they stay true to her core purpose of being a calm,
+          unintrusive companion.
         </p>
       </section>
     </main>
+    <div><footer>
+      <p>
+        Made by Deni · Inspired by <a href="https://hesjustalittleguy.com/" target="_blank" rel="noopener noreferrer">STARBOY</a>· 
+        <a href="#main-content">Back to top</a>
+      </p>
+    </footer></div>
   </body>
 </html>
